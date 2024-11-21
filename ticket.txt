@@ -1,0 +1,7 @@
+TAG COMPONENT TICKET
+
+- Build a tag component
+- Should take text and have a right aligned icon
+- Tag can be clicked
+- Tag icon can be clicked
+e
