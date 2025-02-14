@@ -1,12 +1,10 @@
-import SvgLoss from "./icons/Loss";
+import { PeopleOrSpeciesCard } from "./features/PeopleOrSpeciesCard/PeopleOrSpeciesCard";
 
 function Components() {
   return (
     <div className="components">
-      <h1>Storybook</h1>
-      <p>Imagine this is an amazing Storybook app</p>
-      <SvgLoss />
-      <div className="component-list"></div>
+      <PeopleOrSpeciesCard id={3} type="people" />
+      <PeopleOrSpeciesCard id={35} type="species" />
     </div>
   );
 }
