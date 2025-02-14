@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 
-export const useQuery = <TData>(id: number) => {
+export const useQuery = <TData>(id: number, type: "people" | "species") => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<Error>();
   const [data, setData] = useState<TData>();
 
   useEffect(() => {
     setLoading(true);
-    fetch(`https://swapi.dev/api/people/${id}`, {
+    fetch(`https://swapi.dev/api/${type}/${id}`, {
       method: "GET",
     })
       .then((res) => res.json())
