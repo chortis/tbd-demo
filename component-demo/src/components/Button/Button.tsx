@@ -1,3 +1,5 @@
 import { ButtonProps } from "./Button.types";
 
-export const Button = (props: ButtonProps) => <button {...props} />;
+export const Button = ({ size = "md", ...props }: ButtonProps) => (
+  <button {...props} />
+);
