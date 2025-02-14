@@ -5,6 +5,6 @@ export type ButtonProps = DetailedHTMLProps<
   ButtonHTMLAttributes<HTMLButtonElement>,
   HTMLButtonElement
 > & {
-  "data-testid": string;
-  size: "sm" | "md" | "large";
+  "data-testid"?: string;
+  size?: "sm" | "md" | "large";
 };
